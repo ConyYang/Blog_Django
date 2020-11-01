@@ -1,5 +1,6 @@
 from typing import Dict, List
 from .models import Post
+from django.views.generic import ListView, DetailView
 from django.shortcuts import render
 
 # dummy data here
@@ -29,6 +30,18 @@ def home(request):
     return render(request, 'blog/home.html', context)
 
 
+class PostListView(ListView):
+    model = Post
+    template_name = 'blog/home.html' # <app>/<model>_<viewtype>.html
+    context_object_name = 'posts'
+    ordering = ['-date_posted']
+
+
+class PostDetailView(DetailView):
+    model = Post
+
+
 def about(request):
     title = {'title': 'About'}
     return render(request, 'blog/about.html', title)
+
