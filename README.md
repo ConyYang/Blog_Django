@@ -17,7 +17,7 @@ is written.<br/>
 
 ### Demo
 Here is a short demo.
-[![Demo](main.png)](https://www.youtube.com/watch?v=pTdfKuZSge4)
+[![Demo](https://www.youtube.com/watch?v=pTdfKuZSge4)](main.png)
 ### Implementation detail
 You can click ![here](Documentation%20for%20a%20Django%20App.pdf) to see the implementation detail.
 
